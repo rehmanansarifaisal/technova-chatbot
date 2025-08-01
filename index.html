@@ -29,7 +29,6 @@
 
     let localData = {};
 
-    // Load local chatbot_data.json
     fetch('chatbot_data.json')
       .then(res => res.json())
       .then(data => localData = data)
@@ -59,7 +58,18 @@
       const bubble = last?.querySelector(".bubble");
 
       if (bubble && bubble.textContent.includes("Thinking...")) {
-        bubble.innerHTML = marked.parse(newContent);
+        bubble.innerHTML = ""; // Clear the bubble
+        let index = 0;
+        const interval = setInterval(() => {
+          if (index < newContent.length) {
+            bubble.textContent += newContent.charAt(index);
+            chatDisplay.scrollTop = chatDisplay.scrollHeight;
+            index++;
+          } else {
+            clearInterval(interval);
+            bubble.innerHTML = marked.parse(bubble.textContent);
+          }
+        }, 15); // Fast typing animation (15ms per character)
       } else {
         appendMessage(newContent, "bot");
       }
@@ -68,8 +78,8 @@
     function normalize(text) {
       return text
         .toLowerCase()
-        .replace(/[?.!]/g, "")    // remove punctuation
-        .replace(/\s+/g, " ")     // reduce multiple spaces
+        .replace(/[?.!]/g, "")
+        .replace(/\s+/g, " ")
         .trim();
     }
 
@@ -87,7 +97,6 @@
       const prompt = userInput.value.trim();
       if (!prompt) return;
 
-      // Disable input and button
       userInput.disabled = true;
       document.querySelector(".send-btn").disabled = true;
 
@@ -95,18 +104,15 @@
       appendMessage("Thinking...", 'bot');
       userInput.value = "";
 
-      // 1. Check in local data using normalized match
       const directAnswer = findLocalMatch(prompt);
       if (directAnswer) {
         replaceThinking(directAnswer);
-        // Re-enable input and button
         userInput.disabled = false;
         document.querySelector(".send-btn").disabled = false;
         userInput.focus();
         return;
       }
 
-      // 2. If not found, use OpenRouter LLM
       const brandedPrompt = `As TechNova's virtual assistant, please respond professionally:\n${prompt}`;
       const payload = {
         model: MODEL,
@@ -132,7 +138,6 @@
         replaceThinking(`❌ Error: ${err.message}`);
       }
 
-      // Re-enable input and button
       userInput.disabled = false;
       document.querySelector(".send-btn").disabled = false;
       userInput.focus();
