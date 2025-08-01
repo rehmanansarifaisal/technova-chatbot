@@ -1,0 +1,79 @@
+{
+  "hi": "Hello! Welcome to TechNova Solutions. How can I assist you today?",
+  "hello": "Hi there! How can I help you with our services?",
+  "hey": "Hey! Welcome to TechNova. What would you like to know?",
+
+  "are you a real person": "I'm a virtual assistant developed by TechNova to help answer your queries anytime.",
+  "are you human": "I'm actually an AI assistant, but I'm here to help you just like a real human would.",
+  "what can you do": "I can provide information about TechNova’s services, portfolio, hiring, technologies, and more.",
+  "can i ask you anything": "Absolutely! Ask me anything related to TechNova Solutions, and I’ll try to help.",
+  "can you help me": "Yes, I’m here to assist you with your queries about our services, team, process, and more.",
+  "who built you": "I was developed by the TechNova AI Team as a smart chatbot to assist our clients and visitors.",
+  "how do you work": "I match your queries to our knowledge base. If it's something dynamic, I try to respond in real-time.",
+  "are you available 24/7": "Yes, I’m available anytime to assist you with information and support.",
+  "is this chatbot free to use": "Yes, our virtual assistant is completely free to use for anyone visiting TechNova’s platform.",
+
+  "what is technova?": "TechNova Solutions is a leading software development company offering digital transformation services.",
+  "what do you do?": "We build smart software systems, mobile apps, and AI-based solutions for businesses worldwide.",
+  "what technologies do you use?": "We use modern technologies like React, Node.js, Django, Flutter, TensorFlow, and AWS.",
+  "what makes you different?": "We combine creativity with technology and focus on user-centered, scalable, and secure solutions.",
+  "what industries do you serve?": "We serve various industries including e-commerce, healthcare, logistics, fintech, and education.",
+  "what are your business hours?": "Our working hours are Monday to Friday, 9:00 AM to 6:00 PM (Pakistan Time).",
+
+  "services": "We offer Web Development, Mobile Apps, AI Solutions, UI/UX Design, Cloud Integration, and IT Consultancy.",
+  "web development": "Our web team builds fast, secure, and scalable websites using React, Django, Laravel, and other modern frameworks.",
+  "mobile apps": "We develop custom Android and iOS mobile apps using Flutter, React Native, and native technologies.",
+  "ai solutions": "We specialize in AI services including chatbots, computer vision, natural language processing, and data analytics.",
+  "ui ux design": "Our creative team designs intuitive and engaging user interfaces with a focus on user experience and accessibility.",
+  "cloud integration": "We provide cloud solutions on AWS, Azure, and Google Cloud, ensuring security and scalability.",
+  "consultancy": "Need guidance for your tech project? Our expert consultants can help you plan, build, and deploy effectively.",
+
+  "location": "Our head office is based in Karachi, Pakistan. We also offer remote services worldwide.",
+  "working hours": "Our official working hours are Monday to Friday, 9:00 AM to 6:00 PM (PKT).",
+  "team": "Our team includes expert developers, designers, project managers, and AI engineers with years of industry experience.",
+
+  "hiring": "Yes, we are always looking for talented individuals. You can check our careers page or email your CV to hr@technova.com.",
+  "internship": "We offer internships in Web, Mobile Development, AI, and Design. Apply through internship@technova.com.",
+  "how to join technova": "You can apply for open positions or internships by emailing your resume to hr@technova.com.",
+
+  "clients": "We have worked with over 100 satisfied clients globally in diverse industries including healthcare, e-commerce, and finance.",
+  "portfolio": "You can view our recent projects and case studies on our website: www.technova.com/portfolio",
+
+  "contact": "You can contact us at contact@technova.com or call us at +92-300-1234567.",
+  "address": "Office #5, 2nd Floor, Software Park, Karachi, Pakistan.",
+
+  "thank you": "You're welcome! Let me know if there’s anything else I can help you with.",
+  "thanks": "My pleasure! Feel free to ask if you have more questions.",
+
+  "bye": "Goodbye! Have a great day!",
+  "exit": "Thank you for chatting with TechNova. Hope to see you again!",
+
+  "who are you": "I'm TechNova's virtual assistant, here to answer your queries about our services, team, and solutions.",
+  "who is technova": "TechNova Solutions is a software development company specializing in digital transformation and AI solutions.",
+  "who are your clients": "Our clients range from startups to enterprises in healthcare, finance, logistics, and e-commerce.",
+  "who works at technova": "Our team includes experienced engineers, designers, consultants, and AI specialists.",
+  "who can apply for jobs": "Anyone with relevant skills and passion for tech innovation can apply via our careers page.",
+
+  "how can i start a project": "You can start by contacting us with your requirements via email or our website form.",
+  "how much does a website cost": "It depends on the features, design, and scope. Contact us for a free consultation.",
+  "how to apply for internship": "Simply email your CV and area of interest to internship@technova.com.",
+  "how experienced is your team": "Our team members have 3 to 10+ years of experience in their respective domains.",
+
+  "where are you located": "We are located in Karachi, Pakistan, and we serve clients globally through remote channels.",
+  "where can i see your work": "You can check our portfolio on www.technova.com/portfolio or request a presentation via email.",
+
+  "why choose technova": "We deliver high-quality, cost-effective, and scalable software solutions tailored to your needs.",
+  "why should i trust your services": "We have a proven track record of successful projects and satisfied clients worldwide.",
+  "why is ai important for business": "AI helps automate, optimize, and personalize business processes for better efficiency and growth.",
+
+  "do you offer maintenance": "Yes, we provide post-deployment maintenance and support to ensure smooth operation of your systems.",
+  "can you integrate third party apis": "Yes, we have experience integrating payment gateways, CRMs, analytics, and third-party APIs.",
+  "do you offer e-commerce solutions": "Absolutely! We build custom e-commerce platforms and provide integrations for Shopify, WooCommerce, and more.",
+  "do you serve startups": "Yes, we offer startup-friendly packages and MVP development to help new businesses launch quickly.",
+  "do you work with international clients": "Yes, we serve clients worldwide and have experience managing remote collaborations.",
+  "how long does a project take": "Timelines vary depending on scope, but we always share an estimated schedule before we begin.",
+  "can you redesign my existing website": "Yes, we can redesign and upgrade your current website to meet modern standards.",
+  "do you sign nda": "Yes, we respect confidentiality and can sign NDAs before discussing sensitive projects.",
+
+  "default": "Sorry, I didn’t understand that. Could you please rephrase your question?"
+}
