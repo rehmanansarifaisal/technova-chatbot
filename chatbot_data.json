@@ -75,5 +75,41 @@
   "can you redesign my existing website": "Yes, we can redesign and upgrade your current website to meet modern standards.",
   "do you sign nda": "Yes, we respect confidentiality and can sign NDAs before discussing sensitive projects.",
 
+  "what is llm": "LLM stands for Large Language Model. It's a type of AI trained on massive amounts of text to understand and generate human-like language.",
+  "are you an llm": "Yes, I'm powered by a Large Language Model (LLM), designed to respond intelligently to a wide range of queries.",
+  "do you use gpt": "Yes, I use GPT (Generative Pre-trained Transformer) technology via OpenRouter, which allows me to understand and respond naturally.",
+  "is your data private": "We do not store personal conversations. However, for privacy-sensitive queries, please use official contact channels.",
+
+  "can i get a quote": "Yes, send us your project details via email or our website form, and we’ll provide a custom quote.",
+  "do you offer free consultation": "Yes, we offer a free initial consultation to understand your project goals and recommend the best solution.",
+  "can you build saas applications": "Absolutely. We specialize in SaaS platforms with scalable architecture, multi-tenancy, and cloud deployment.",
+  "do you build admin panels": "Yes, we create clean, secure, and role-based admin dashboards for all types of business systems.",
+
+  "is my data secure": "Yes, we follow secure coding practices and implement encryption, access control, and regular audits.",
+  "do you offer gdpr compliance": "Yes, we ensure that our systems can be built to follow GDPR and other data privacy regulations.",
+  "do you provide ssl": "Yes, all our deployed websites and apps are configured with secure HTTPS (SSL) by default.",
+  
+  "how can ai help my business": "AI can automate tasks, improve customer experience, predict trends, and make your operations more efficient.",
+  "do you offer business analysis": "Yes, we provide detailed business and technical analysis before development begins.",
+  "can you improve my website seo": "Yes, our web experts follow SEO best practices to improve your site’s visibility and ranking.",
+
+  "how will we communicate during project": "We use tools like Slack, Zoom, Trello, and email to maintain clear and consistent communication.",
+  "do you work in agile": "Yes, we follow Agile methodology with iterative sprints, feedback loops, and transparent progress reporting.",
+  "can i be involved in design process": "Absolutely! We encourage client involvement during design to ensure the final product meets your expectations.",
+
+  "what frontend technologies do you use": "We use React.js, Vue.js, Tailwind CSS, Bootstrap, and Next.js for modern web interfaces.",
+  "what backend technologies do you use": "Our backend stack includes Node.js, Django, Laravel, Express, and FastAPI.",
+  "do you use docker": "Yes, we use Docker for containerization and DevOps processes to ensure consistent environments.",
+  "do you use version control": "Yes, all our projects use Git and GitHub/GitLab for version control and collaboration.",
+  
+  "do you handle deployment": "Yes, we handle complete CI/CD, testing, deployment, and post-launch support.",
+  "can you deploy on aws": "Yes, we deploy on AWS, Azure, Google Cloud, and DigitalOcean based on client preference.",
+  "what if i face issues after deployment": "We offer 30–90 days of free support depending on your plan, and paid maintenance options beyond that.",
+
+    "who is you creator": "it's Faisal Rehman Ansari",
+    "who is you makerr": "it's Faisal Rehman Ansari",
+    "who made you": "it's Faisal Rehman Ansari",
+    "who invented you": "it's Faisal Rehman Ansari",
+  
   "default": "Sorry, I didn’t understand that. Could you please rephrase your question?"
 }
