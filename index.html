@@ -69,7 +69,7 @@
             clearInterval(interval);
             bubble.innerHTML = marked.parse(bubble.textContent);
           }
-        }, 15); // Fast typing animation (15ms per character)
+        }, 15); // Fast typing animation
       } else {
         appendMessage(newContent, "bot");
       }
@@ -132,8 +132,12 @@
         });
 
         const result = await response.json();
-        const botMessage = result.choices[0].message.content.trim();
-        replaceThinking(botMessage);
+        if (result.choices && result.choices.length > 0 && result.choices[0].message) {
+          const botMessage = result.choices[0].message.content.trim();
+          replaceThinking(botMessage);
+        } else {
+          replaceThinking("❌ Error: No valid response from AI model.");
+        }
       } catch (err) {
         replaceThinking(`❌ Error: ${err.message}`);
       }
