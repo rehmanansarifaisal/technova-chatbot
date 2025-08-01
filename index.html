@@ -20,7 +20,7 @@
 
   <script>
     const API_KEY = "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";
-    const MODEL = "openai/gpt-3.5-turbo:free"; // via OpenRouter
+    const MODEL = "openai/gpt-3.5-turbo:free";
     const REFERER = "http://localhost";
     const TITLE = "TechNova Chatbot";
 
@@ -58,7 +58,7 @@
       const bubble = last?.querySelector(".bubble");
 
       if (bubble && bubble.textContent.includes("Thinking...")) {
-        bubble.innerHTML = ""; // Clear the bubble
+        bubble.innerHTML = "";
         let index = 0;
         const interval = setInterval(() => {
           if (index < newContent.length) {
@@ -69,18 +69,14 @@
             clearInterval(interval);
             bubble.innerHTML = marked.parse(bubble.textContent);
           }
-        }, 15); // Fast typing animation
+        }, 15);
       } else {
         appendMessage(newContent, "bot");
       }
     }
 
     function normalize(text) {
-      return text
-        .toLowerCase()
-        .replace(/[?.!]/g, "")
-        .replace(/\s+/g, " ")
-        .trim();
+      return text.toLowerCase().replace(/[?.!]/g, "").replace(/\s+/g, " ").trim();
     }
 
     function findLocalMatch(prompt) {
@@ -132,12 +128,13 @@
         });
 
         const result = await response.json();
-        if (result.choices && result.choices.length > 0 && result.choices[0].message) {
-          const botMessage = result.choices[0].message.content.trim();
-          replaceThinking(botMessage);
-        } else {
-          replaceThinking("❌ Error: No valid response from AI model.");
+        const botMessage = result?.choices?.[0]?.message?.content?.trim();
+
+        if (!botMessage) {
+          throw new Error("No valid response from AI model.");
         }
+
+        replaceThinking(botMessage);
       } catch (err) {
         replaceThinking(`❌ Error: ${err.message}`);
       }
