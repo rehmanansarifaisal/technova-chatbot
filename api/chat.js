@@ -1,8 +1,7 @@
+// api/chat.js
 export default async function handler(req, res) {
-  const { prompt } = req.body;
-
-  if (!prompt) {
-    return res.status(400).json({ error: "Missing prompt" });
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Only POST allowed" });
   }
 
   try {
@@ -11,22 +10,15 @@ export default async function handler(req, res) {
       headers: {
         "Authorization": `Bearer ${process.env.API_KEY}`,
         "Content-Type": "application/json",
-        "HTTP-Referer": "https://technova-chatbot.vercel.app",
+        "HTTP-Referer": "https://rehmanansarifaisal.github.io",  // Replace if needed
         "X-Title": "TechNova Chatbot"
       },
-      body: JSON.stringify({
-        model: "google/gemma-3n-e2b-it:free",
-        messages: [{ role: "user", content: `As TechNova's virtual assistant, reply professionally:\n${prompt}` }]
-      })
+      body: JSON.stringify(req.body)
     });
 
     const data = await response.json();
-    const reply = data?.choices?.[0]?.message?.content?.trim();
-
-    if (!reply) throw new Error("No valid response");
-
-    res.status(200).json({ reply });
+    return res.status(200).json(data);
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    return res.status(500).json({ error: err.message || "Internal Server Error" });
   }
 }
